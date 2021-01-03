@@ -11,19 +11,19 @@
 
 ## Todos
 
-- [] Criar bot no Discord
-- [] Mandar uma mensagem
-- [] Comando say
-- [] Help
-- [] Comando salve
-- [] Coloca-la num Host
-- [] Google Docs API
-- [] Carregar documento em um embed
-- [] Escrever num documento
-- [] Cancelar
-- [] Curiosidade
-- [] Kiss,Tapão
-- [] Fatality
+- [ ] Criar bot no Discord
+- [ ] Mandar uma mensagem
+- [ ] Comando say
+- [ ] Help
+- [ ] Comando salve
+- [ ] Coloca-la num Host
+- [ ] Google Docs API
+- [ ] Carregar documento em um embed
+- [ ] Escrever num documento
+- [ ] Cancelar
+- [ ] Curiosidade
+- [ ] Kiss,Tapão
+- [ ] Fatality
 
 ## Comandos
 
