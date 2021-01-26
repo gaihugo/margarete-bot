@@ -25,6 +25,12 @@ client.on("message", async (message) => {
     delete require.cache[require.resolve(`../commands/${command}.js`)];
     return commandFile.run(client, message, args);
   } catch (err) {
+    message.channel.send(
+      "Isto non ecsiste!, se precisa de ajuda digita ?help",
+      {
+        tts: true,
+      }
+    );
     console.error("Erro" + err);
   }
 });
