@@ -27,22 +27,22 @@
 
 ## Comandos
 
-| Comando | Ação                                                                         |
-| ------- | ---------------------------------------------------------------------------- |
-| ?help   | Escreve no chat a lista de comandos (Embed)                                  |
-| ?say    | Escreve no chat aquilo que foi escrito ao lado do comando                    |
-| ?salve  | Escreve no chat /tts e manda um salve com frase aleatoria                    |
-| ?nt     | Anota em um documento do google aquilo que foi escrito ao lado do comando    |
-| ?lk     | Escreve no chat sua lista de anotações (Embed)                               |
-| ?rec    | Anota na lista de recomendação aquilo que foi escrito ao lado do comando     |
-| ?list   | Escreve no chat a lista de recomendações (Embed)                             |
-| ?mn     | Escreve no chat o significado da palavra que foi escrito ao lado do comando  |
-| ?fatal  | Manda a creusa cantar imediatamente o som de fatality                        |
-| ?wtf    | Escreve no chat /tts + algo aleatorio da wikipedia                           |
-| ?kiss   | Montanta um embed envia no chat com foto de beijo e menciona os beijoqueiros |
-| ?tapa   | Montanta um embed envia no chat com foto de tapa e menciona os tapeados      |
-| ?cancel | Manda uma foto de cancelamento da pessoa mencionada ao lado do comando       |
-| ?links  | Manda o link dos documentos do google escritos (Embed)                       |
-| ?td     | Adiciona a atividadade mencionada a uma lista de tarefas                     |
-| ?tds    | Escreve no chat a lista de tarefas numerada (Embed)                          |
-| ?dt     | Deleta da lista de tarefas a tarefa feita.Por numero                         |
+| Comando | Ação                                                                        |
+| ------- | --------------------------------------------------------------------------- |
+| ?help   | Escreve no chat a lista de comandos (Embed)                                 |
+| ?say    | Escreve no chat aquilo que foi escrito ao lado do comando                   |
+| ?salve  | Escreve no chat /tts e manda um salve com frase aleatoria                   |
+| ?nt     | Anota em um documento do google aquilo que foi escrito ao lado do comando   |
+| ?lk     | Escreve no chat sua lista de anotações (Embed)                              |
+| ?rec    | Anota na lista de recomendação aquilo que foi escrito ao lado do comando    |
+| ?list   | Escreve no chat a lista de recomendações (Embed)                            |
+| ?mn     | Escreve no chat o significado da palavra que foi escrito ao lado do comando |
+| ?fatal  | Manda a creusa cantar imediatamente o som de fatality                       |
+| ?wtf    | Escreve no chat /tts + algo aleatorio da wikipedia                          |
+| ?kiss   | Monta um embed envia no chat com foto de beijo e menciona os beijoqueiros   |
+| ?tapa   | Monta um embed envia no chat com foto de tapa e menciona os tapeados        |
+| ?cancel | Manda uma foto de cancelamento da pessoa mencionada ao lado do comando      |
+| ?links  | Manda o link dos documentos do google escritos (Embed)                      |
+| ?td     | Adiciona a atividadade mencionada a uma lista de tarefas                    |
+| ?tds    | Escreve no chat a lista de tarefas numerada (Embed)                         |
+| ?dt     | Deleta da lista de tarefas a tarefa feita.Por numero                        |
