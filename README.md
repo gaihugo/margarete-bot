@@ -11,9 +11,10 @@
 
 ## Todos
 
-- [ ] Criar bot no Discord
-- [ ] Mandar uma mensagem
-- [ ] Comando say
+- [x] Criar bot no Discord
+- [x] Mandar uma mensagem
+- [x] Comando say
+- [x] Comando spk
 - [ ] Help
 - [ ] Comando salve
 - [ ] Coloca-la num Host
@@ -31,14 +32,15 @@
 | ------- | --------------------------------------------------------------------------- |
 | ?help   | Escreve no chat a lista de comandos (Embed)                                 |
 | ?say    | Escreve no chat aquilo que foi escrito ao lado do comando                   |
-| ?salve  | Escreve no chat /tts e manda um salve com frase aleatoria                   |
+| ?spk    | Escreve no chat aquilo que foi escrito ao lado do comando (tts = true)      |
+| ?salve  | Escreve no chat um salve com frase aleatoria (tts = true)                   |
 | ?nt     | Anota em um documento do google aquilo que foi escrito ao lado do comando   |
 | ?lk     | Escreve no chat sua lista de anotações (Embed)                              |
 | ?rec    | Anota na lista de recomendação aquilo que foi escrito ao lado do comando    |
 | ?list   | Escreve no chat a lista de recomendações (Embed)                            |
 | ?mn     | Escreve no chat o significado da palavra que foi escrito ao lado do comando |
 | ?fatal  | Manda a creusa cantar imediatamente o som de fatality                       |
-| ?wtf    | Escreve no chat /tts + algo aleatorio da wikipedia                          |
+| ?wtf    | Escreve no chat algo aleatorio da wikipedia (tts = true)                    |
 | ?kiss   | Monta um embed envia no chat com foto de beijo e menciona os beijoqueiros   |
 | ?tapa   | Monta um embed envia no chat com foto de tapa e menciona os tapeados        |
 | ?cancel | Manda uma foto de cancelamento da pessoa mencionada ao lado do comando      |
