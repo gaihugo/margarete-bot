@@ -15,9 +15,11 @@
 - [x] Mandar uma mensagem
 - [x] Comando say
 - [x] Comando spk
+- [x] Comando clear
+- [x] Radom Activity
+- [ ] Coloca-la num Host
 - [ ] Help
 - [ ] Comando salve
-- [ ] Coloca-la num Host
 - [ ] Google Docs API
 - [ ] Carregar documento em um embed
 - [ ] Escrever num documento
@@ -33,6 +35,7 @@
 | ?help   | Escreve no chat a lista de comandos (Embed)                                 |
 | ?say    | Escreve no chat aquilo que foi escrito ao lado do comando                   |
 | ?spk    | Escreve no chat aquilo que foi escrito ao lado do comando (tts = true)      |
+| ?clear  | Apaga algumas mensagens de um canal de texto                                |
 | ?salve  | Escreve no chat um salve com frase aleatoria (tts = true)                   |
 | ?nt     | Anota em um documento do google aquilo que foi escrito ao lado do comando   |
 | ?lk     | Escreve no chat sua lista de anotações (Embed)                              |

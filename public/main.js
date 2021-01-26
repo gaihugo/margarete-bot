@@ -2,10 +2,10 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("../config.json");
 const prefix = config.prefix;
-// const store = require("../scripts/store.js");
-// const commands = store(prefix);
+const randomActivity = require("../scripts/radomActivity");
 
 client.on("ready", () => {
+  randomActivity(client);
   console.log(`Logado com o bot ${client.user.tag}`);
 });
 
