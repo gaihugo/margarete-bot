@@ -17,8 +17,7 @@
 - [x] Comando spk
 - [x] Comando clear
 - [x] Radom Activity
-- [ ] Coloca-la num Host
-- [ ] Help
+- [x] Help
 - [ ] Comando salve
 - [ ] Google Docs API
 - [ ] Carregar documento em um embed
