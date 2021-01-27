@@ -11,6 +11,7 @@ module.exports.run = async (client, message, args) => {
     const helpEmbed = new Discord.MessageEmbed()
       .setColor("#9cd485")
       .setTitle("Lista de Comandos da Margarete")
+      .setURL("https://github.com/gaihugo/margarete-bot/blob/master/README.md")
       .setAuthor(
         "Margarete",
         "https://bibliotecasma.org/wp-content/uploads/2018/07/kiki-2-274x300.png"
@@ -22,7 +23,7 @@ module.exports.run = async (client, message, args) => {
       .addFields(
         {
           name: "Comandos:",
-          value: ["?help", "?clear", "?spk", "?say"],
+          value: ["?help", "?clear", "?spk", "?say", "?salve"],
           inline: true,
         },
         {
@@ -32,6 +33,7 @@ module.exports.run = async (client, message, args) => {
             "?clear",
             "?spk + algo a ser falado",
             "?say + algo a ser escrito",
+            "?salve",
           ],
           inline: true,
         },
@@ -45,6 +47,8 @@ module.exports.run = async (client, message, args) => {
             "**?spk** => Fala com voz de narradora aquilo escrito ao lado (Limitado)",
             " ",
             "**?say** => Escreve no chat aquilo escrito ao lado",
+            " ",
+            "**?salve** => Escreve no chat um salve com frase aleatoria",
             " ",
           ],
         }

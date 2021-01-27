@@ -18,7 +18,7 @@
 - [x] Comando clear
 - [x] Radom Activity
 - [x] Help
-- [ ] Comando salve
+- [x] Comando salve
 - [ ] Google Docs API
 - [ ] Carregar documento em um embed
 - [ ] Escrever num documento
