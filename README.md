@@ -19,13 +19,13 @@
 - [x] Radom Activity
 - [x] Help
 - [x] Comando salve
+- [ ] Kiss,Tapão
+- [ ] Curiosidade
+- [ ] Cancelar
+- [ ] Fatality
 - [ ] Google Docs API
 - [ ] Carregar documento em um embed
 - [ ] Escrever num documento
-- [ ] Cancelar
-- [ ] Curiosidade
-- [ ] Kiss,Tapão
-- [ ] Fatality
 
 ## Comandos
 

@@ -10,15 +10,18 @@ client.on("ready", () => {
 });
 
 client.on("message", async (message) => {
-  if (!message.content.startsWith(prefix)) return;
+  const msg = message.content;
+  if (!msg.startsWith(prefix)) return;
+  if (msg == prefix || msg == "??" || msg == "?!") return;
+  //TODO IGNORAR PREFIX + SIMBOLO
   if (message.author == client.user) return;
   if (
-    message.content.startsWith(`<@!${client.user.id}`) ||
-    message.content.startsWith(`<@${client.user.id}`)
+    msg.startsWith(`<@!${client.user.id}`) ||
+    msg.startsWith(`<@${client.user.id}`)
   )
     return;
-  let args = message.content.split(" ").slice(1);
-  let command = message.content.split(" ")[0];
+  let args = msg.split(" ").slice(1);
+  let command = msg.split(" ")[0];
   command = command.slice(prefix.length);
   try {
     let commandFile = require(`../commands/${command}.js`);

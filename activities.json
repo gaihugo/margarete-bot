@@ -7,5 +7,20 @@
   {
     "type": "PLAYING",
     "message": "livros na Justina"
+  },
+
+  {
+    "type": "LISTENING",
+    "message": "a Creusa"
+  },
+
+  {
+    "type": "WATCHING",
+    "message": "a aula da Marina"
+  },
+
+  {
+    "type": "WATCHING",
+    "message": "a aula da Sandra"
   }
 ]
