@@ -4,7 +4,7 @@ module.exports.run = async (client, message, args) => {
   const somenthing = args.join(" ");
   if (somenthing) {
     message.channel.send(
-      "Não cara como você é burro, se precisa de ajuda digita ?help",
+      "Não cara como você é burro, se precisa de ajuda digita somente ?help",
       { tts: true }
     );
   } else {
@@ -23,7 +23,7 @@ module.exports.run = async (client, message, args) => {
       .addFields(
         {
           name: "Comandos:",
-          value: ["?help", "?clear", "?spk", "?say", "?salve"],
+          value: ["?help", "?clear", "?spk", "?say", "?salve", "?tapa"],
           inline: true,
         },
         {
@@ -34,6 +34,7 @@ module.exports.run = async (client, message, args) => {
             "?spk + algo a ser falado",
             "?say + algo a ser escrito",
             "?salve",
+            "?tapa + @pessoa",
           ],
           inline: true,
         },
@@ -49,6 +50,8 @@ module.exports.run = async (client, message, args) => {
             "**?say** => Escreve no chat aquilo escrito ao lado",
             " ",
             "**?salve** => Escreve no chat um salve com frase aleatoria",
+            " ",
+            "**?tapa** => Escreve no chat uma menssagem de tapa + um gif aleatorio",
             " ",
           ],
         }

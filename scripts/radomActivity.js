@@ -1,4 +1,4 @@
-const activities = require("../activities.json");
+const activities = require("./activities.json");
 
 const randomActivity = function (client) {
   const activity = randomElement(activities);
@@ -7,7 +7,10 @@ const randomActivity = function (client) {
   sleep(time).then(() => randomActivity(client));
 };
 
-module.exports = randomActivity;
+module.exports = {
+  randomActivity,
+  randomElement,
+};
 
 function sleep(ms) {
   return new Promise((resolve) => {

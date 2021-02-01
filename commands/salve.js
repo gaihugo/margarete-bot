@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
-const msg = require("../salve_messages.json");
+const msg = require("../scripts/salve.json");
+const { randomElement } = require("../scripts/radomActivity");
 
 module.exports.run = async (client, message, args) => {
   const somenthing = args.join(" ");
@@ -9,9 +10,6 @@ module.exports.run = async (client, message, args) => {
       { tts: true }
     );
   } else {
-    function randomElement(array) {
-      return array[Math.floor(Math.random() * array.length)];
-    }
     const svl = "Salve! ";
     var salveMsg = randomElement(msg);
 

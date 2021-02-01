@@ -19,7 +19,8 @@
 - [x] Radom Activity
 - [x] Help
 - [x] Comando salve
-- [ ] Kiss,Tapão
+- [x] Tapa
+- [ ] Kiss
 - [ ] Curiosidade
 - [ ] Cancelar
 - [ ] Fatality

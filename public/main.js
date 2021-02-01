@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("../config.json");
 const prefix = config.prefix;
-const randomActivity = require("../scripts/radomActivity");
+const { randomActivity } = require("../scripts/radomActivity");
 
 client.on("ready", () => {
   randomActivity(client);
@@ -11,6 +11,8 @@ client.on("ready", () => {
 
 client.on("message", async (message) => {
   const msg = message.content;
+  const authr = message.author.username;
+  const avatar = message.author.displayAvatarURL({ format: "png" });
   if (!msg.startsWith(prefix)) return;
   if (msg == prefix || msg == "??" || msg == "?!") return;
   //TODO IGNORAR PREFIX + SIMBOLO
@@ -26,7 +28,7 @@ client.on("message", async (message) => {
   try {
     let commandFile = require(`../commands/${command}.js`);
     delete require.cache[require.resolve(`../commands/${command}.js`)];
-    return commandFile.run(client, message, args);
+    return commandFile.run(client, message, args, authr, avatar);
   } catch (err) {
     message.channel.send(
       "Isto non ecsiste!, se precisa de ajuda digita ?help",
