@@ -31,7 +31,7 @@ module.exports.run = async (client, message, args, author, avatar) => {
       .setColor("#E35C40")
       .setTitle("Um Puta Tapão!!!")
       .setAuthor(author, avatar)
-      .setDescription(msg, { tts: true })
+      .setDescription(msg)
       .setImage(tapaIMG)
       .setFooter(
         "Margarete a bota do Discord",
