@@ -23,7 +23,15 @@ module.exports.run = async (client, message, args) => {
       .addFields(
         {
           name: "Comandos:",
-          value: ["?help", "?clear", "?spk", "?say", "?salve", "?tapa"],
+          value: [
+            "?help",
+            "?clear",
+            "?spk",
+            "?say",
+            "?salve",
+            "?tapa",
+            "?anml",
+          ],
           inline: true,
         },
         {
@@ -35,6 +43,7 @@ module.exports.run = async (client, message, args) => {
             "?say + algo a ser escrito",
             "?salve",
             "?tapa + @pessoa",
+            "?anml",
           ],
           inline: true,
         },
@@ -49,9 +58,11 @@ module.exports.run = async (client, message, args) => {
             " ",
             "**?say** => Escreve no chat aquilo escrito ao lado",
             " ",
-            "**?salve** => Escreve no chat um salve com frase aleatoria",
+            "**?salve** => Escreve no chat um salve com frase aleatória",
             " ",
-            "**?tapa** => Escreve no chat uma menssagem de tapa + um gif aleatorio",
+            "**?tapa** => Escreve no chat uma menssagem de tapa + um gif aleatório",
+            " ",
+            "**?anml** => Envia no chat a foto de um animal aleatório",
             " ",
           ],
         }
