@@ -1,12 +1,10 @@
 const Discord = require("discord.js");
+const { errMessage } = require("../config.json");
 
 module.exports.run = async (client, message, args) => {
   const somenthing = args.join(" ");
   if (somenthing) {
-    message.channel.send(
-      "Não cara como você é burro, se precisa de ajuda digita ?help",
-      { tts: true }
-    );
+    message.channel.send(errMessage, { tts: true });
   } else {
     const fetched = await message.channel.messages.fetch({ limit: 100 });
     message.channel.bulkDelete(fetched, { filterOld: false });

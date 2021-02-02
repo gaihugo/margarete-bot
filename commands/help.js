@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const { avatarM, color, thum, gif } = require("../config.json");
 
 module.exports.run = async (client, message, args) => {
   const somenthing = args.join(" ");
@@ -9,17 +10,14 @@ module.exports.run = async (client, message, args) => {
     );
   } else {
     const helpEmbed = new Discord.MessageEmbed()
-      .setColor("#9cd485")
+      .setColor(color)
       .setTitle("Lista de Comandos da Margarete")
       .setURL("https://github.com/gaihugo/margarete-bot/blob/master/README.md")
-      .setAuthor(
-        "Margarete",
-        "https://bibliotecasma.org/wp-content/uploads/2018/07/kiki-2-274x300.png"
-      )
+      .setAuthor("Margarete", avatarM)
       .setDescription(
         "Silêncioo!, estão me desenvolvendo ainda eles são lerdos!A lista de comandos segue abaixo como o requisitado.Agora me de licença que eu vou fumar.:smoking:"
       )
-      .setThumbnail("https://i.ytimg.com/vi/mtyD-HmKIEo/maxresdefault.jpg")
+      .setThumbnail(thum)
       .addFields(
         {
           name: "Comandos:",
@@ -31,6 +29,7 @@ module.exports.run = async (client, message, args) => {
             "?salve",
             "?tapa",
             "?anml",
+            "?ph",
           ],
           inline: true,
         },
@@ -44,6 +43,7 @@ module.exports.run = async (client, message, args) => {
             "?salve",
             "?tapa + @pessoa",
             "?anml",
+            "?ph + pensador",
           ],
           inline: true,
         },
@@ -64,15 +64,14 @@ module.exports.run = async (client, message, args) => {
             " ",
             "**?anml** => Envia no chat a foto de um animal aleatório",
             " ",
+            "**?ph** => Escreve no chat uma frase aleatória do pensador citado ao lado",
+            " ",
           ],
         }
       )
-      .setImage("https://i.makeagif.com/media/2-27-2018/lbSE8U.gif")
+      .setImage(gif)
       .setTimestamp()
-      .setFooter(
-        "Margarete BFF Creusa",
-        "https://bibliotecasma.org/wp-content/uploads/2018/07/kiki-2-274x300.png"
-      );
+      .setFooter("Margarete BFF Creusa", avatarM);
 
     message.channel.send(helpEmbed);
   }

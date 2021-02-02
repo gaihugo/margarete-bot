@@ -1,4 +1,4 @@
-const activities = require("./activities.json");
+const activities = require("../jsons/activities.json");
 
 const randomActivity = function (client) {
   const activity = randomElement(activities);

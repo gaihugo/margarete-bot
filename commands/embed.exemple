@@ -1,0 +1,24 @@
+    const embed = new Discord.MessageEmbed()
+      .setColor()
+      .setTitle()
+      .setURL()
+      .setAuthor()
+      .setDescription()
+      .setThumbnail()
+      .addFields(
+        {
+          name: "",
+          value: ["",""],
+          inline: true,
+        },
+        {
+          name: "",
+          value: ["",""],
+          inline: true,
+        })
+      .addField("name", "value", true ) //Inline the boolean
+      .setImage()
+      .setTimestamp()
+      .setFooter();
+
+       message.channel.send(embed)

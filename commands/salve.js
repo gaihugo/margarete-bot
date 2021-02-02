@@ -1,18 +1,13 @@
 const Discord = require("discord.js");
-const msg = require("../scripts/salve.json");
-const { randomElement } = require("../scripts/radomActivity");
+const { salveMsg } = require("../scripts/js/radoms");
+const { errMessage } = require("../config.json");
 
 module.exports.run = async (client, message, args) => {
   const somenthing = args.join(" ");
   if (somenthing) {
-    message.channel.send(
-      "Não cara como você é burro, se precisa de ajuda digita ?help",
-      { tts: true }
-    );
+    message.channel.send(errMessage, { tts: true });
   } else {
     const svl = "Salve! ";
-    var salveMsg = randomElement(msg);
-
     message.reply(svl + salveMsg, { tts: true });
   }
 };

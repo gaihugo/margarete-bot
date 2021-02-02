@@ -21,6 +21,7 @@
 - [x] Comando salve
 - [x] Tapa
 - [x] Animal
+- [x] Frase de um Pensador (API --> pensador-api )
 - [ ] Kiss
 - [ ] Curiosidade
 - [ ] Cancelar
@@ -40,6 +41,7 @@
 | ?salve  | Escreve no chat um salve com frase aleatoria (tts = true)                   |
 | ?tapa   | Monta um embed envia no chat com foto de tapa e menciona os tapeados        |
 | ?anml   | Envia no chat a foto de um animal aleatorio (Embed)                         |
+| ?ph     | Escreve no chat uma frase aleatória do pensador citado ao lado (Embed)      |
 | ?kiss   | Monta um embed envia no chat com foto de beijo e menciona os beijoqueiros   |
 | ?mn     | Escreve no chat o significado da palavra que foi escrito ao lado do comando |
 | ?nt     | Anota em um documento do google aquilo que foi escrito ao lado do comando   |

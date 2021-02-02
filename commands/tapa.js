@@ -1,27 +1,20 @@
 const Discord = require("discord.js");
-const tapasIMG = require("../scripts/tapa.json");
-const errsIMG = require("../scripts/errs.json");
-const { randomElement } = require("../scripts/radomActivity");
+const { tapaIMG, errIMG } = require("../scripts/js/radoms");
+const { avatarM, color, thum } = require("../config.json");
 
 module.exports.run = async (client, message, args, author, avatar) => {
-  var tapaIMG = randomElement(tapasIMG);
-  var errIMG = randomElement(errsIMG);
   let user = message.mentions.users.first() || client.users.cache.get(args[0]);
   if (!user) {
     const msg = `acaba de dar um tapão em ${author},você precisa de ajuda digita ?help`;
     const errs = new Discord.MessageEmbed()
-      .setColor("#9cd485")
+      .setColor(color)
       .setTitle("Um Puta Erro!!!")
-      .setAuthor(
-        "Margarete",
-        "https://bibliotecasma.org/wp-content/uploads/2018/07/kiki-2-274x300.png"
-      )
+      .setAuthor("Margarete", avatarM)
       .setDescription("Margarete " + msg)
+      .setThumbnail(thum)
+      .setTimestamp()
       .setImage(errIMG)
-      .setFooter(
-        "Margarete a injustiçada do Discord",
-        "https://bibliotecasma.org/wp-content/uploads/2018/07/kiki-2-274x300.png"
-      );
+      .setFooter("Margarete a injustiçada do Discord", avatarM);
     message.channel.send(errs);
     message.channel.send("Que " + msg, { tts: true });
     message.channel.send("Que você é uma chata,insuportável!", { tts: true });
@@ -32,11 +25,9 @@ module.exports.run = async (client, message, args, author, avatar) => {
       .setTitle("Um Puta Tapão!!!")
       .setAuthor(author, avatar)
       .setDescription(msg)
+      .setTimestamp()
       .setImage(tapaIMG)
-      .setFooter(
-        "Margarete a bota do Discord",
-        "https://bibliotecasma.org/wp-content/uploads/2018/07/kiki-2-274x300.png"
-      );
+      .setFooter("Margarete a bota do Discord", avatarM);
     message.channel.send(embedTapa);
     message.channel.send(msg, { tts: true });
     message.channel.send("Tô passada chocada Creusa! :scream:", { tts: true });

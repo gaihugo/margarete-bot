@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/gaihugo/margarete-bot#readme",
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "discord.js": "^12.5.1",
+    "pensador-api": "^1.0.0"
   }
 }

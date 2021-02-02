@@ -1,12 +1,10 @@
 const Discord = require("discord.js");
+const { errMessage } = require("../config.json");
 
 module.exports.run = async (client, message, args) => {
   const spkMessage = args.join(" ");
   if (!spkMessage) {
-    message.channel.send(
-      "Não cara como você é burro, se precisa de ajuda digita ?help",
-      { tts: true }
-    );
+    message.channel.send(errMessage, { tts: true });
   } else {
     message.delete().catch((O_o) => {});
     message.channel.send(spkMessage, { tts: true });
