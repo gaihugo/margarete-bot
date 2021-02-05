@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const phrase = require("../scripts/js/pensador");
 const { errIMG } = require("../scripts/js/radoms");
-const { avatarM, color, thum } = require("../config.json");
+const { avatarM, color, thum } = require("../scripts/js/env");
 
 module.exports.run = async (client, message, args, author) => {
   const auth = args.join(" ");

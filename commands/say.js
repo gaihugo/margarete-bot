@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const { errMessage } = require("../config.json");
+const { errMessage } = require("../scripts/js/env");
 
 module.exports.run = async (client, message, args) => {
   const sayMessage = args.join(" ");

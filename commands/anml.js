@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const { anmlIMG, errIMG } = require("../scripts/js/radoms");
-const { avatarM, color } = require("../config.json");
+const { avatarM, color } = require("../scripts/js/env");
 
 module.exports.run = async (client, message, args, author, avatar) => {
   const somenthing = args.join(" ");

@@ -117,3 +117,7 @@ dist
 
 # Token and Prefix
 config.json
+
+# Secret
+
+secret.json

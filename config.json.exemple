@@ -1,9 +1,0 @@
-{
-  "prefix": "your_prefix",
-  "token": "your_discord_token"
-  "color": "some_padron_color_hex",
-  "avatarM": "some_avatar_img_URL",
-  "thum": "some_thumbnail_img_URL",
-  "gif": "some_image_gif_URL",
-  "errMessage": "some_message_string"
-}

@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const { tapaIMG, errIMG } = require("../scripts/js/radoms");
-const { avatarM, color, thum } = require("../config.json");
+const { avatarM, color, thum } = require("../scripts/js/env");
 
 module.exports.run = async (client, message, args, author, avatar) => {
   let user = message.mentions.users.first() || client.users.cache.get(args[0]);
