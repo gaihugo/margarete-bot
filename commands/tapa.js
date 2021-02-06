@@ -13,7 +13,7 @@ module.exports.run = async (client, message, args, author, avatar) => {
       .setDescription("Margarete " + msg)
       .setThumbnail(thum)
       .setTimestamp()
-      .setImage(errIMG)
+      .setImage(errIMG())
       .setFooter("Margarete a injustiçada do Discord", avatarM);
     message.channel.send(errs);
     message.channel.send("Que " + msg, { tts: true });
@@ -26,7 +26,7 @@ module.exports.run = async (client, message, args, author, avatar) => {
       .setAuthor(author, avatar)
       .setDescription(msg)
       .setTimestamp()
-      .setImage(tapaIMG)
+      .setImage(tapaIMG())
       .setFooter("Margarete a bota do Discord", avatarM);
     message.channel.send(embedTapa);
     message.channel.send(msg, { tts: true });

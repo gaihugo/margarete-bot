@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args, author, avatar) => {
       .setAuthor("Margarete", avatarM)
       .setDescription("O " + msg)
       .setImage(avatar)
-      .setThumbnail(errIMG)
+      .setThumbnail(errIMG())
       .setTimestamp()
       .setFooter("Margarete a injustiçada do Discord", avatarM);
     message.channel.send(errs);
@@ -27,7 +27,7 @@ module.exports.run = async (client, message, args, author, avatar) => {
       .setTitle("Belíssimo Animal")
       .setAuthor("Margarete", avatarM)
       .setDescription(msg)
-      .setImage(anmlIMG)
+      .setImage(anmlIMG())
       .setTimestamp()
       .setFooter("Margarete a bota do Discord", avatarM);
     message.channel.send(embedTapa);

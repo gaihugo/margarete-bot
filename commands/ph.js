@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args, author) => {
       .setTitle("Uma livrada na cara!!!")
       .setAuthor("Margarete", avatarM)
       .setDescription(`**${author},você precisa de ajuda digita ?help**`)
-      .setImage(errIMG)
+      .setImage(errIMG())
       .setThumbnail(thum)
       .setTimestamp()
       .setFooter("Margarete a empregada do Discord", avatarM);

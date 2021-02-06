@@ -8,6 +8,6 @@ module.exports.run = async (client, message, args) => {
     message.channel.send(errMessage, { tts: true });
   } else {
     const svl = "Salve! ";
-    message.reply(svl + salveMsg, { tts: true });
+    message.reply(svl + salveMsg(), { tts: true });
   }
 };
