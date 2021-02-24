@@ -23,11 +23,6 @@ module.exports.run = async (client, message, args, author) => {
       { tts: true }
     );
   } else {
-    message.channel.send(
-      "Esse comando é um pouco lento.Pedimos que espere e se não gostou foda-se!",
-      { tts: true }
-    );
-
     const text = await phrase(auth);
     const ph = text.text;
     const atr = text.author;
