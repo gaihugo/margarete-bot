@@ -20,6 +20,9 @@
   "dependencies": {
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
-    "pensador-api": "^1.0.0"
+    "fast-xml-parser": "^3.18.0",
+    "node-fetch": "^2.6.1",
+    "pensador-api": "^1.0.0",
+    "urlencode": "^1.1.0"
   }
 }
