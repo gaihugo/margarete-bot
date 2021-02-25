@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const ignore = require("../scripts/jsons/ignore.json")
-const { prefix, token, mssg, word, word2, aspas, barraI } = require("../scripts/js/env");
+const { prefix, token, mssg, word, word2, barraI } = require("../scripts/js/env");
 const { randomActivity } = require("../scripts/js/radomActivity");
 const abrv = require("../scripts/js/abrv")
 
@@ -20,7 +20,7 @@ client.on("message", async (message) => {
   }
   if (!msg.startsWith(prefix)) return;
   const letter = msg.slice(1, 2)
-  if (msg == prefix || letter == prefix || letter == barraI  ||  letter == aspas ||  ignore.find((e) => { return e == letter })) return;
+  if (msg == prefix || letter == prefix || letter == barraI  ||  letter == `"` ||  ignore.find((e) => { return e == letter })) return;
   if (
     msg.startsWith(`<@!${client.user.id}`) ||
     msg.startsWith(`<@${client.user.id}`)

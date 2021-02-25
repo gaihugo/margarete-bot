@@ -10,7 +10,6 @@ const errMessage = process.env.ERRMESSAGE;
 const mssg = process.env.MSSG;
 const word = process.env.WORD;
 const word2 = process.env.WORD2;
-const aspas = process.env.ASPAS_DUPLAS;
 const barraI = process.env.BARRA_INVERTIDA
 
 module.exports = {
@@ -24,6 +23,5 @@ module.exports = {
   mssg,
   word,
   word2,
-  aspas,
   barraI,
 };
