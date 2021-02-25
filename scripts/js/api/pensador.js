@@ -1,5 +1,5 @@
 const pensador = require("pensador-api");
-const { randomElement } = require("./radomActivity");
+const { randomElement } = require("../radomActivity");
 
 const getPhrase = async function (author) {
   var array = await pensador({ term: author, max: 100 });

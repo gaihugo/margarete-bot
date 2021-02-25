@@ -1,7 +1,9 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const { prefix, token, mssg, word, word2 } = require("../scripts/js/env");
+const ignore = require("../scripts/jsons/ignore.json")
+const { prefix, token, mssg, word, word2, aspas, barraI } = require("../scripts/js/env");
 const { randomActivity } = require("../scripts/js/radomActivity");
+const abrv = require("../scripts/js/abrv")
 
 client.on("ready", () => {
   randomActivity(client);
@@ -17,8 +19,8 @@ client.on("message", async (message) => {
     message.channel.send(mssg);
   }
   if (!msg.startsWith(prefix)) return;
-  if (msg == prefix || msg == "??" || msg == "?!") return;
-  //TODO IGNORAR PREFIX + SIMBOLO
+  const letter = msg.slice(1, 2)
+  if (msg == prefix || letter == prefix || letter == barraI  ||  letter == aspas ||  ignore.find((e) => { return e == letter })) return;
   if (
     msg.startsWith(`<@!${client.user.id}`) ||
     msg.startsWith(`<@${client.user.id}`)
@@ -27,25 +29,20 @@ client.on("message", async (message) => {
   let args = msg.split(" ").slice(1);
   let command = msg.split(" ")[0];
   command = command.slice(prefix.length);
+  let cmmd = abrv(command)
   try {
-    let commandFile = require(`../commands/${command}.js`);
-    delete require.cache[require.resolve(`../commands/${command}.js`)];
+    let commandFile = require(`../commands/${cmmd}.js`);
+    delete require.cache[require.resolve(`../commands/${cmmd}.js`)];
     return commandFile.run(client, message, args, authr, avatar);
   } catch (err) {
-    if ((err = "Error: Cannot find module")) {
+      console.log("Erro ==> "+ err)
       message.channel.send(
         "Isto non ecsiste!, se precisa de ajuda digita ?help",
         {
           tts: true,
         }
       );
-    } else {
-      message.channel.send(`Peraí me buguei toda!! Culpa do ${err}`, {
-        tts: true,
-      });
-      console.error("Erro --> " + err);
     }
-  }
 });
 
 client.login(token);

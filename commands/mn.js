@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const dicio = require("../scripts/js/dicio");
+const dicio = require("../scripts/js/api/dicio");
 const { errIMG } = require("../scripts/js/radoms");
 const { avatarM, color, thum } = require("../scripts/js/env");
 

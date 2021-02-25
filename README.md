@@ -43,6 +43,11 @@
 | ?anml   | Envia no chat a foto de um animal aleatorio (Embed)                         |
 | ?ph     | Escreve no chat uma frase aleatória do pensador citado ao lado (Embed)      |
 | ?mn     | Escreve no chat o significado da palavra que foi escrito ao lado do comando |
+
+## Comandos a serem feitos
+
+| Comando | Ação                                                                        | 
+| ------- | --------------------------------------------------------------------------- |
 | ?nt     | Anota em um documento do google aquilo que foi escrito ao lado do comando   | 
 | ?lk     | Escreve no chat sua lista de anotações (Embed)                              |
 | ?rec    | Anota na lista de recomendação aquilo que foi escrito ao lado do comando    |

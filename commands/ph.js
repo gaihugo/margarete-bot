@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const phrase = require("../scripts/js/pensador");
+const phrase = require("../scripts/js/api/pensador");
 const { errIMG } = require("../scripts/js/radoms");
 const { avatarM, color, thum } = require("../scripts/js/env");
 
