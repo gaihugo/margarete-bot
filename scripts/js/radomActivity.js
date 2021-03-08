@@ -1,5 +1,7 @@
+// Importação do activities.json
 const activities = require("../jsons/activities.json");
 
+// Função
 const randomActivity = function (client) {
   const activity = randomElement(activities);
   client.user.setActivity(activity.message, { type: activity.type });
@@ -7,10 +9,9 @@ const randomActivity = function (client) {
   sleep(time).then(() => randomActivity(client));
 };
 
-module.exports = {
-  randomActivity,
-  randomElement,
-};
+function randomElement(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
 
 function sleep(ms) {
   return new Promise((resolve) => {
@@ -23,6 +24,8 @@ function randomIntFromInterval(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function randomElement(array) {
-  return array[Math.floor(Math.random() * array.length)];
-}
+// Exportação
+module.exports = {
+  randomActivity,
+  randomElement,
+};

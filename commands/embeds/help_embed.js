@@ -1,7 +1,10 @@
-//Escreve no chat o significado da palavra que foi escrito ao lado do comando
+// Importação de bibliotecas
 const Discord = require("discord.js");
+
+// Importação de padroes graficos
 const { avatarM, color, thum, gif } = require("../../scripts/js/env");
 
+// Embed
 const helpEmbed = new Discord.MessageEmbed()
       .setColor(color)
       .setTitle("Lista de Comandos da Margarete")
@@ -70,4 +73,5 @@ const helpEmbed = new Discord.MessageEmbed()
       .setTimestamp()
       .setFooter("Margarete BFF Creusa", avatarM);
 
+// Exportação
 module.exports = { embed: helpEmbed }

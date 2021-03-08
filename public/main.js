@@ -1,19 +1,47 @@
+// Importação de Bibliotecas
 const Discord = require("discord.js");
-const client = new Discord.Client();
-const ignore = require("../scripts/jsons/ignore.json")
-const { prefix, token, mssg, word, word2, barraI } = require("../scripts/js/env");
-const { randomActivity } = require("../scripts/js/radomActivity");
-const abrv = require("../scripts/js/abrv")
+const fs = require("fs")
+const path = require("path")
 
+// Minhas definições
+const abrv = require("../scripts/js/abrv")
+const { randomActivity } = require("../scripts/js/radomActivity");
+const ignore = require("../scripts/jsons/ignore.json")
+// ENV
+const { prefix, token, mssg, word, word2, barraI, errMessage } = require("../scripts/js/env");
+
+// Classes
+const client = new Discord.Client();
+client.queues =  new Map()
+client.commands = new Discord.Collection();
+
+// Importação dos Comandos 
+const commandFiles = fs.readdirSync(path.join(__dirname,"../commands")).filter((fileName) => {
+  return fileName.endsWith(".js")
+})
+for (var fileName of commandFiles) {
+  const command = require(`../commands/${fileName}`)
+  client.commands.set(command.name,command)
+}
+
+// Ao iniciar 
 client.on("ready", () => {
   randomActivity(client);
   console.log(`Logado com o bot ${client.user.tag}`);
 });
 
+// Ao receber uma mensagem
 client.on("message", async (message) => {
+  // Parametros
   const msg = message.content.toLowerCase();
   const authr = message.author.username;
   const avatar = message.author.displayAvatarURL({ format: "png" });
+  let args = msg.split(" ").slice(1);
+  let command = msg.split(" ")[0];
+  command = command.slice(prefix.length);
+  let cmmd = abrv(command)
+
+  // Verificação "Filtro"
   if (message.author == client.user) return;
   if (msg == word || msg == word2) {
     message.channel.send(mssg);
@@ -26,23 +54,13 @@ client.on("message", async (message) => {
     msg.startsWith(`<@${client.user.id}`)
   )
     return;
-  let args = msg.split(" ").slice(1);
-  let command = msg.split(" ")[0];
-  command = command.slice(prefix.length);
-  let cmmd = abrv(command)
-  try {
-    let commandFile = require(`../commands/${cmmd}.js`);
-    delete require.cache[require.resolve(`../commands/${cmmd}.js`)];
-    return commandFile.run(client, message, args, authr, avatar);
-  } catch (err) {
-      console.log("Erro ==> "+ err)
-      message.channel.send(
-        "Isto non ecsiste!, se precisa de ajuda digita ?help",
-        {
-          tts: true,
-        }
-      );
-    }
+  
+  // Executar Comandos
+  try{
+    client.commands.get(cmmd).execute(client, message, args, authr, avatar)
+  } catch(e){
+    message.channel.send(errMessage, {tts: true})
+  }
 });
 
 client.login(token);

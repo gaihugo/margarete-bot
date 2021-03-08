@@ -23,6 +23,10 @@
 - [x] Animal
 - [x] Frase de um Pensador (API --> pensador-api )
 - [x] Pesquisar significado de algo (Dicionario-Aberto API)
+- [ ] Refatorar embeds
+- [ ] Refatorar dicio.js
+- [ ] Escreve no chat o significado da palavra que foi escrito ao lado do comando (Help Opção)
+- [ ] Fazer um aletorio para o ph
 - [ ] Curiosidade
 - [ ] Cancelar
 - [ ] Fatality

@@ -1,5 +1,7 @@
+// Importação de biblioteca
 require("dotenv/config");
 
+// Importação do env
 const prefix = process.env.PREFIX;
 const token = process.env.TOKEN;
 const color = process.env.COLOR;
@@ -12,6 +14,7 @@ const word = process.env.WORD;
 const word2 = process.env.WORD2;
 const barraI = process.env.BARRA_INVERTIDA
 
+// Exportação
 module.exports = {
   prefix,
   token,

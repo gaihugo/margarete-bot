@@ -1,9 +1,11 @@
+// Importação de bibliotecas
 const fetch = require("node-fetch")
 const parse = require("fast-xml-parser")
 const encode = require("urlencode")
 
-
+// Funções
 async function getNear (word) {
+    // Pega a palavra proxima
     const search = encode(word)
     const ul = `https://api.dicionario-aberto.net/near/${search}`
     const resp = await fetch(ul)
@@ -12,6 +14,7 @@ async function getNear (word) {
 }
 
 async function getMean (word){
+    // Pega o significado
     const search = encode(word)
     const url = `https://api.dicionario-aberto.net/word/${search}`
     const response = await fetch(url)
@@ -57,4 +60,5 @@ async function getMean (word){
         }
     }
         
+    // Exportação
     module.exports = getMean

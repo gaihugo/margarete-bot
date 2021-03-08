@@ -1,13 +1,23 @@
-const Discord = require("discord.js");
-const { salveMsg } = require("../scripts/js/radoms");
-const { errMessage } = require("../scripts/js/env");
+// Importações de Minhas definições
+const { salveMsg } = require("../scripts/js/radoms"); // Mensagem aleatorio de salve
+const { errMessage } = require("../scripts/js/env"); // Padrões graficos da margarete
 
-module.exports.run = async (client, message, args) => {
+// Função
+const execute = async (client, message, args) => {
   const somenthing = args.join(" ");
+  // Escreveu algo ao lado do comando
   if (somenthing) {
+    // Sim => Mensagem de erro
     message.channel.send(errMessage, { tts: true });
   } else {
+    // Não => Mensagem de salve
     const svl = "Salve! ";
     message.reply(svl + salveMsg(), { tts: true });
   }
 };
+
+// Exportação
+module.exports = {
+  name: "salve",
+  execute
+}
