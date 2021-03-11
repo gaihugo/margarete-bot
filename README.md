@@ -23,6 +23,8 @@
 - [x] Animal
 - [x] Frase de um Pensador (API --> pensador-api )
 - [x] Pesquisar significado de algo (Dicionario-Aberto API)
+- [x] Meme song
+- [x] Na mensagemde help pôr por prefixo
 - [ ] Refatorar embeds
 - [ ] Refatorar dicio.js
 - [ ] Escreve no chat o significado da palavra que foi escrito ao lado do comando (Help Opção)
@@ -47,6 +49,12 @@
 | ?anml   | Envia no chat a foto de um animal aleatorio (Embed)                         |
 | ?ph     | Escreve no chat uma frase aleatória do pensador citado ao lado (Embed)      |
 | ?mn     | Escreve no chat o significado da palavra que foi escrito ao lado do comando |
+| ?play   | Reproduz num canal de audio um meme aleatorio de uma categoria ou não       |
+| ?pause  | Pausa o meme que está reproduzindo                                          |
+| ?resume | Continuar a tocar o meme pausado                                            |
+| ?volume | Define o valor do volume do meme reproduzido (0 a 10)                       |
+| ?stop   | Para de reproduzir os memes e sai do canal de audio                         |
+| ?skip   | Pula o meme que está reproduzindo para outro da fila                        |
 
 ## Comandos a serem feitos
 

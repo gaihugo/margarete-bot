@@ -23,7 +23,58 @@ function abrv (command) {
         // Anml
         case "an":
             return "anml"      
+        
+        case "animal":
+            return "anml" 
 
+        // Play
+        case "meme":
+            return "play" 
+        
+        case "mm":
+            return "play" 
+        
+        // Volume
+        case "volume":
+            return "vol"
+
+        case "v":
+            return "vol"
+
+        // Pause
+        case "pa":
+            return "pause"
+
+        // Resume
+        case "re":
+            return "resume"
+
+        case "continue":
+            return "resume"
+
+        // Stop
+        case "st":
+            return "stop"
+        
+        // Mean
+        case "mean":
+            return "mn"
+
+        // Speak
+        case "speak":
+            return "spk"
+
+        // Phrase
+        case "phrase":
+            return "ph"
+
+        // Skip
+        case "sp":
+            return "skip"
+
+        case "proxima":
+            return "skip"
+        
         default:
             return command
     }

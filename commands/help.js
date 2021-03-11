@@ -1,5 +1,5 @@
 // Importação do embed do help
-const embed = require("./embeds/help_embed")
+const {embeds}= require("./embeds/help_embed")
 
 // Função
 const execute = async (client, message, args) => {
@@ -16,8 +16,8 @@ const execute = async (client, message, args) => {
   } else {
     // Não => Envio de embed
 
-    // Envio
-    message.channel.send(embed);
+    // Envio de embed
+    message.channel.send(await embeds(message));
   }
 };
 

@@ -12,7 +12,8 @@ const errMessage = process.env.ERRMESSAGE;
 const mssg = process.env.MSSG;
 const word = process.env.WORD;
 const word2 = process.env.WORD2;
-const barraI = process.env.BARRA_INVERTIDA
+const barraI = process.env.BARRA_INVERTIDA;
+const errMa = process.env.ERRAUDIO;
 
 // Exportação
 module.exports = {
@@ -27,4 +28,5 @@ module.exports = {
   word,
   word2,
   barraI,
+  errMa,
 };
