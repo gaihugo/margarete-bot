@@ -4,7 +4,7 @@ const Discord = require("discord.js");
 // Importações de Minhas definições
 const phrase = require("../scripts/js/api/pensador"); // Função que pesquisa uma frase de um pensador
 const { errIMG } = require("../scripts/js/radoms"); // Imagem de erro
-const { avatarM, color, thum } = require("../scripts/js/env"); // Padrões graficos da margarete
+const { avatarM, color, thum } = require("../scripts/js/config"); // Padrões graficos da margarete
 
 // Função
 const execute = async (client, message, args, author) => {

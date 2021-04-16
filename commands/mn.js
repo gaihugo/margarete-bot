@@ -4,7 +4,7 @@ const Discord = require("discord.js");
 // Importações de Minhas definições
 const dicio = require("../scripts/js/api/dicio"); // Função que pesquisa o significado de uma palavra
 const { errIMG } = require("../scripts/js/radoms"); // Imagem de erro
-const { avatarM, color, thum } = require("../scripts/js/env"); // Padrões graficos da margarete
+const { avatarM, color, thum } = require("../scripts/js/config"); // Padrões graficos da margarete
 
 
 // Função

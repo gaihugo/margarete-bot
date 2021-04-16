@@ -1,6 +1,6 @@
 // Importações de Minhas definições
 const { salveMsg } = require("../scripts/js/radoms"); // Mensagem aleatorio de salve
-const { errMessage } = require("../scripts/js/env"); // Padrões graficos da margarete
+const { errMessage } = require("../scripts/js/config"); // Padrões graficos da margarete
 
 // Função
 const execute = async (client, message, args) => {

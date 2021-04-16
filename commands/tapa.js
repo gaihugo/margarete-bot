@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 
 // Importações de Minhas definições
 const { tapaIMG, errIMG } = require("../scripts/js/radoms"); // Imagem aleatoria do erro e do tapa
-const { avatarM, color, thum } = require("../scripts/js/env"); // Padrões graficos da margarete
+const { avatarM, color, thum } = require("../scripts/js/config"); // Padrões graficos da margarete
 
 // Função
 const execute = async (client, message, args, author, avatar) => {

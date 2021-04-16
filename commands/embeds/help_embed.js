@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 const Pagination = require("discord.js-pagination")
 
 // Importação de padroes graficos
-const { avatarM, color, prefix, thum } = require("../../scripts/js/env");
+const { avatarM, color, prefix, thum } = require("../../scripts/js/config");
 
 // Parametros
 const p = prefix

@@ -1,5 +1,5 @@
 // Importação de Minhas predefinições
-const { errMa } = require("../scripts/js/env"); // Padrões graficos da margarete
+const { errMa } = require("../scripts/js/config"); // Padrões graficos da margarete
 
 // Função
 const execute = async (client, message, args, authr, avatar) => {

@@ -1,5 +1,5 @@
 // Importação de mensagem de erro
-const { errMessage } = require("../scripts/js/env");
+const { errMessage } = require("../scripts/js/config");
 
 // Função
 const execute = async (client, message, args) => {

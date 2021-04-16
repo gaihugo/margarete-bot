@@ -28,5 +28,5 @@ module.exports = {
   word,
   word2,
   barraI,
-  errMa,
+  errMa
 };
