@@ -1,84 +1,94 @@
 // Função
-function abrv (command) {
-    switch (command) {
-        // Clear
-        case "cl":
-            return "clear"
+function abrv(command) {
+  switch (command) {
+    // Clear
+    case "cl":
+      return "clear";
 
-        // Help
-        case "hp":
-            return "help"
+    // Help
+    case "hp":
+      return "help";
 
-        // Tapa
-        case "tp":
-            return "tapa" 
-        
-        case "tap":
-            return "tapa" 
-   
-        // Salve
-        case "svl":
-            return "salve"
+    // Tapa
+    case "tp":
+      return "tapa";
 
-        // Anml
-        case "an":
-            return "anml"      
-        
-        case "animal":
-            return "anml" 
+    case "tap":
+      return "tapa";
 
-        // Play
-        case "meme":
-            return "play" 
-        
-        case "mm":
-            return "play" 
-        
-        // Volume
-        case "volume":
-            return "vol"
+    // Salve
+    case "svl":
+      return "salve";
 
-        case "v":
-            return "vol"
+    // Anml
+    case "an":
+      return "anml";
 
-        // Pause
-        case "pa":
-            return "pause"
+    case "animal":
+      return "anml";
 
-        // Resume
-        case "re":
-            return "resume"
+    // Play
+    case "meme":
+      return "play";
 
-        case "continue":
-            return "resume"
+    case "mm":
+      return "play";
 
-        // Stop
-        case "st":
-            return "stop"
-        
-        // Mean
-        case "mean":
-            return "mn"
+    // Volume
+    case "volume":
+      return "vol";
 
-        // Speak
-        case "speak":
-            return "spk"
+    case "v":
+      return "vol";
 
-        // Phrase
-        case "phrase":
-            return "ph"
+    // Pause
+    case "pa":
+      return "pause";
 
-        // Skip
-        case "sp":
-            return "skip"
+    // Resume
+    case "re":
+      return "resume";
 
-        case "proxima":
-            return "skip"
-        
-        default:
-            return command
-    }
+    case "continue":
+      return "resume";
+
+    // Stop
+    case "st":
+      return "stop";
+
+    // Mean
+    case "mean":
+      return "mn";
+
+    // Speak
+    case "speak":
+      return "spk";
+
+    // Phrase
+    case "phrase":
+      return "ph";
+
+    // Skip
+    case "sp":
+      return "skip";
+
+    case "proxima":
+      return "skip";
+
+    // Instant
+    case "is":
+      return "instant";
+
+    case "i":
+      return "instant";
+
+    case "ins":
+      return "instant";
+
+    default:
+      return command;
+  }
 }
 
 // Exportação
-module.exports = abrv
+module.exports = abrv;

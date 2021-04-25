@@ -27,4 +27,4 @@ const execute = async (client, message, args) => {
 module.exports = {
   name: "clear",
   execute
-}
+};

@@ -1,5 +1,5 @@
 // Importação do embed do help
-const {embeds}= require("./embeds/help_embed")
+const { embeds } = require("./embeds/help_embed");
 
 // Função
 const execute = async (client, message, args) => {
@@ -17,7 +17,7 @@ const execute = async (client, message, args) => {
     // Não => Envio de embed
 
     // Envio de embed
-    message.channel.send(await embeds(message));
+    embeds(message);
   }
 };
 
@@ -25,4 +25,4 @@ const execute = async (client, message, args) => {
 module.exports = {
   name: "help",
   execute
-}
+};

@@ -43,10 +43,10 @@ client.on("ready", () => {
 // Ao receber uma mensagem
 client.on("message", async message => {
   // Parametros
+  let args = message.content.split(" ").slice(1);
   const msg = message.content.toLowerCase();
   const authr = message.author.username;
   const avatar = message.author.displayAvatarURL({ format: "png" });
-  let args = msg.split(" ").slice(1);
   let command = msg.split(" ")[0];
   command = command.slice(prefix.length);
   let cmmd = abrv(command);

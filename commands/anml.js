@@ -30,7 +30,7 @@ const execute = async (client, message, args, author, avatar) => {
     message.channel.send(errs);
     message.channel.send("Que o " + msg, { tts: true });
     message.channel.send("Que você é um cachorrinho filha da puta!", {
-      tts: true,
+      tts: true
     });
   } else {
     // Não => Mensagem do animal
@@ -62,4 +62,4 @@ const execute = async (client, message, args, author, avatar) => {
 module.exports = {
   name: "anml",
   execute
-}
+};

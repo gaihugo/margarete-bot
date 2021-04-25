@@ -1,5 +1,21 @@
-const Discord = require('discord.js')
+// Importação 
+const Discord = require("discord.js");
 
-module.exports.run = async (client, message, args) => {
-    
-}
+// Função
+const execute = async (client, message, args) => {
+  const somenthing = args.join(" ");
+  // Citou algo depois do comando
+  if (somenthing) {
+    // Sim =>
+
+  } else {
+    // Não =>
+
+  }
+};
+
+// Exportação
+module.exports = {
+  name: "some_name",
+  execute
+};

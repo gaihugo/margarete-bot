@@ -4,7 +4,7 @@ require("dotenv/config");
 // Importação do env
 const prefix = process.env.PREFIX;
 const token = process.env.TOKEN;
-const color = process.env.COLOR;
+const color = "#9cd485";
 const avatarM = process.env.AVATARM;
 const thum = process.env.THUM;
 const gif = process.env.GIF;
