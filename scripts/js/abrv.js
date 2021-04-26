@@ -76,7 +76,7 @@ function abrv(command) {
       return "skip";
 
     // Instant
-    case "is":
+    case "in":
       return "instant";
 
     case "i":
@@ -84,6 +84,10 @@ function abrv(command) {
 
     case "ins":
       return "instant";
+
+    // Flip
+    case "fl":
+      return "flip";
 
     default:
       return command;

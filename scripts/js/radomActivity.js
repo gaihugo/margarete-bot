@@ -14,7 +14,7 @@ function randomElement(array) {
 }
 
 function sleep(ms) {
-  return new Promise((resolve) => {
+  return new Promise(resolve => {
     setTimeout(resolve, ms);
   });
 }
@@ -28,4 +28,5 @@ function randomIntFromInterval(min, max) {
 module.exports = {
   randomActivity,
   randomElement,
+  sleep
 };

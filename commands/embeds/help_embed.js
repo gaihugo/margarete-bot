@@ -33,6 +33,7 @@ async function embed(message) {
           `${p}animal **ou** ${p}anml`,
           `${p}ph`,
           `${p}mean **ou** ${p}mn`,
+          `${p}flip **ou** ${p}fl`,
           " ",
           "-------------**M E M E S**-------------",
           " ",
@@ -61,6 +62,7 @@ async function embed(message) {
           `${p}anml`,
           `${p}ph + pensador`,
           `${p}mn + palavra`,
+          `${p}flip`,
           " ",
           "-------------**M E M E S**-------------",
           " ",
@@ -113,6 +115,8 @@ async function embed(message) {
         `**${p}ph** => Escreve no chat uma frase aleatória do pensador citado ao lado`,
         " ",
         `**${p}mn** => Escreve no chat o significado da palavra que foi escrita ao lado`,
+        " ",
+        `**${p}flip** => Gira uma moeda e mostra o resultado`,
         " ",
         "**OBS: Reaja a mensagem para mudar de página**"
       ]
